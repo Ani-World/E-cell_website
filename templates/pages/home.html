@@ -1,0 +1,64 @@
+{% extends "layout/base.html" %}
+
+{% block content %}
+
+<section class="hero">
+    <div class="container">
+
+        <h1>EMPULSE 2026</h1>
+        <h2>Odyssey of the Unbound</h2>
+
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Sed do eiusmod tempor incididunt ut labore.
+        </p>
+
+        <button>Explore Events</button>
+
+    </div>
+</section>
+
+
+<section id="about" class="section reveal">
+    <div class="container">
+
+        <h2>About</h2>
+
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Ut enim ad minim veniam.
+        </p>
+
+    </div>
+</section>
+
+
+<section id="events"class="section reveal">
+    <div class="container">
+
+        <h2>Events</h2>
+
+        <div class="events-grid">
+
+            {% include "components/event_card.html" %}
+            {% include "components/event_card.html" %}
+            {% include "components/event_card.html" %}
+
+        </div>
+
+    </div>
+</section>
+
+
+<section id="gallery" class="section reveal">
+    <div class="container">
+
+        <h2>Gallery</h2>
+
+        <p>Lorem ipsum dolor sit amet.</p>
+
+    </div>
+</section>
+
+{% endblock %}
+

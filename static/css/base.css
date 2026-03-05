@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Josefin+Sans:wght@400;600&family=Poppins:wght@300;400;500&display=swap");
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* COLOR SYSTEM */
+
+:root {
+    --parchment: #f4e7c5;
+    --deep-brown: #3a2e1f;
+    --bronze: #8c6239;
+    --gold: #c9a44c;
+    --card: #fff8e7;
+}
+
+
+/* BODY */
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: var(--parchment);
+    color: var(--deep-brown);
+    line-height: 1.6;
+}
+
+
+/* HEADINGS */
+
+h1, h2 {
+    font-family: "Cinzel Decorative", serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 70px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+
+/* TEXT */
+
+p {
+    margin-bottom: 18px;
+    max-width: 700px;
+}
+
+
+/* LINKS */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* CONTAINER SYSTEM */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* SECTIONS */
+
+.section {
+    padding: 90px 0;
+}
+
+
+/* BUTTONS */
+
+button {
+    padding: 12px 26px;
+    border: none;
+    cursor: pointer;
+
+    background: var(--gold);
+    color: white;
+
+    font-weight: 600;
+    border-radius: 4px;
+
+    font-family: "Josefin Sans", sans-serif;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: var(--bronze);
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}

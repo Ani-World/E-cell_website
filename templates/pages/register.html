@@ -1,0 +1,35 @@
+{% extends "layout/base.html" %}
+
+{% block content %}
+
+<section class="register-page">
+
+    <h1>Register</h1>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Please fill the form below to participate in the event.
+    </p>
+
+    <form>
+
+        <label>Name</label>
+        <input type="text" name="name">
+
+        <label>Email</label>
+        <input type="email" name="email">
+
+        <label>Select Event</label>
+        <select name="event">
+            <option>Event 1</option>
+            <option>Event 2</option>
+            <option>Event 3</option>
+        </select>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</section>
+
+{% endblock %}
